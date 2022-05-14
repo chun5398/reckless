@@ -1,20 +1,40 @@
 {
   "name": "reckless",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "main": "lib/commonjs/index.js",
   "repository": "git@github.com:chun5398/reckless.git",
   "author": "ChunYangQiao <chunyangqiao@yzw.cn>",
   "license": "MIT",
   "scripts": {
-    "cm": "git-cz"
+    "cm": "git-cz",
+    "prepare": "bob build"
   },
   "devDependencies": {
     "git-cz": "4.8.0",
-    "lerna": "4.0.0",
-    "react-native-builder-bob": "^0.18.2"
-  }
+    "react-native-builder-bob": "^0.18.2",
+    "typescript": "4.6.4"
+  },
+  "react-native": "src/index.ts",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "name": "@reckless/hooks",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "ChunYangQiao <chunyangqiao@yzw.cn>",
+  "homepage": "https://github.com/chun5398/reckless#readme",
+  "license": "MIT",
+  "main": "dist/hooks.js",
+  "module": "dist/hooks.module.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chun5398/reckless.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/chun5398/reckless/issues"
+  }
+}

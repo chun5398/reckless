@@ -1,7 +1,7 @@
 {
   "name": "@reckless/hooks",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "hooks based on react",
   "author": "ChunYangQiao <chunyangqiao@yzw.cn>",
   "homepage": "https://github.com/chun5398/reckless#readme",
   "license": "MIT",
